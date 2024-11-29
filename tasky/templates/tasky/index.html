@@ -1,0 +1,37 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Tasky</title>
+
+        <link rel="stylesheet" href="{% static 'tasky/styles.css' %}">
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Tasky</h1>
+            <p>A minimalistic todolist to a better management of your day.</p>
+        </header>
+
+        <div class="container">
+            <div class="auth-btns">
+                <button>Login</button>
+                <button>Signup</button>
+            </div>
+
+            <div class="todolist">
+                <div class="searchbar"></div>
+                <div class="add-task"></div>
+                <div class="todolist-items"></div>
+                <div class="save-todolist"></div>
+            </div>
+        </div>
+        
+    </body>
+
+
+
+
+
+</html>

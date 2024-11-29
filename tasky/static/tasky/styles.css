@@ -1,0 +1,16 @@
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-btns{
+    display:flex;
+    justify-content: center;
+}
+
+.auth-btns button{
+    font-size:2em;
+    padding:5px;
+    margin:15px;
+}
