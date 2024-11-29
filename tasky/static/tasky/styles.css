@@ -6,11 +6,23 @@ header{
 
 .auth-btns{
     display:flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auth-btns .login, .auth-btns .sign-up{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.auth-btns p{
+
+    margin:auto
+
 }
 
 .auth-btns button{
-    font-size:2em;
+    font-size:18px;
     padding:5px;
     margin:15px;
 }

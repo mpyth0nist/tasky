@@ -1,5 +1,7 @@
-{% load static %}
+<!DOCTYPE html>
 
+
+{% load static %}
 <html>
     <head>
         <title>Tasky</title>
@@ -16,15 +18,39 @@
 
         <div class="container">
             <div class="auth-btns">
-                <button>Login</button>
-                <button>Signup</button>
+                <div class="login">
+                    <p>Login to your account</p>
+                    <button>Login</button>
+                </div>
+
+                <div class="sign-up">
+                    <p>or create one if you don't have it already!</p>
+                    <button>Signup</button>
+                </div>
+
             </div>
 
+            <p>you can use tasky as a guest too .. </p>
             <div class="todolist">
-                <div class="searchbar"></div>
-                <div class="add-task"></div>
-                <div class="todolist-items"></div>
-                <div class="save-todolist"></div>
+                <div class="searchbar">
+                    <form action="" method="GET">
+                        <input type="search" placeholder="Search for a task">
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                <div class="todolist-items">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="add-task">
+                    <button>Add a task</button>
+                </div>
+                <div class="save-todolist">
+                    <button>Download your todolist</button>
+                </div>
             </div>
         </div>
         
