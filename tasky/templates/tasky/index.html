@@ -6,7 +6,7 @@
     <head>
         <title>Tasky</title>
 
-        <link rel="stylesheet" href="{% static 'tasky/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'tasky/css/styles.css' %}">
     </head>
 
 
@@ -30,9 +30,10 @@
 
             </div>
 
-            <p>you can use tasky as a guest too .. </p>
             <div class="todolist">
+                
                 <div class="searchbar">
+                    <p>you can use tasky as a guest too .. </p>
                     <form action="" method="GET">
                         <input type="search" placeholder="Search for a task">
                         <input type="submit" value="Search">
@@ -40,20 +41,27 @@
                 </div>
                 <div class="todolist-items">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        {% for task in tasks %}
+                        <li>{{ task.task }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
-                <div class="add-task">
-                    <button>Add a task</button>
+                <div class="add-tasks-section">
+                    <button class="add-task" onclick="addTask(this)">Add a task</button>
+                    <button class="add-task onclick">Add</button>
                 </div>
-                <div class="save-todolist">
-                    <button>Download your todolist</button>
+
+                <div class="download-section">                    
+                    <button class="download-btn" onclick="downloadTodoList()">Download your todolist</button>
+                    <button class="download-btn format">CSV</button>
+                    <button class="download-btn format">Markdown</button>
+                    <button class="download-btn format">Notion</button>
+
                 </div>
+
             </div>
         </div>
-        
+        <script src="{% static 'tasky/js/script.js' %}"></script> 
     </body>
 
 

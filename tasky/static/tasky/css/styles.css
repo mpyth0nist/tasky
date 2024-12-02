@@ -1,0 +1,93 @@
+/* Variables */
+:root{
+    --main-color : rgb(188, 25, 25);
+}
+
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-btns{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auth-btns .login, .auth-btns .sign-up{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.auth-btns p{
+
+    margin:auto
+
+}
+
+.auth-btns button{
+    font-size:18px;
+    padding:5px;
+    margin:15px;
+}
+
+
+
+.todolist{
+    display:flex;
+    margin:auto;
+    width:380px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todolist .searchbar{
+    margin:30px 0;
+}
+
+.searchbar input[type="search"]{
+    padding:15px;
+    border:1px solid grey;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+
+.add-tasks-section{
+    display:flex;
+}
+
+.add-task.onclick{
+    display:none;
+    margin:0 5px;
+}
+
+button, input[type='submit']{
+    padding:10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: var(--main-color);
+    color:white;
+    transition: 0.3s background-color ease;
+    border-radius:10px;
+}
+
+button:hover, input[type='submit']:hover {
+    background-color:white;
+    color:rgb(188, 25, 25);
+
+}
+
+.add-tasks-section input{
+    border-radius:10px;
+}
+.download-section{
+    margin:40px 0;
+}
+
+.download-btn.format{
+    display:none;
+}
+
